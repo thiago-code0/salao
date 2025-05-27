@@ -1,0 +1,108 @@
+/* <section class="comprar"> */
+
+section.comprar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(-90deg, #EFE9E9, #FFFFFF);
+  background: -webkit-linear-gradient(-90deg, #EFE9E9, #FFFFFF);
+  background: -moz-linear-gradient(-90deg, #EFE9E9, #FFFFFF);
+  padding: 120px 80px 180px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.comprar h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-verde);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 800px;
+}
+
+section.comprar p {
+  font-family: var(--bold);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  color: var(--cor-verde);
+  line-height: 1.5;
+  margin: 10px 0 15px 0;
+}
+
+section.comprar h5 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-vermelho);
+  line-height: 1.5;
+  text-decoration: line-through;
+}
+
+section.comprar h3 {
+  font-family: var(--bold);
+  font-size: clamp(3rem, 3vw, 4rem);
+  color: var(--cor-verde);
+  padding: 20px 0 10px 0;
+}
+
+section.comprar h4 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-verde);
+  padding: 0 0 40px 0;
+}
+
+section.comprar button {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde);
+  padding: 20px 35px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+section.comprar button:hover {
+  box-shadow: 10px 10px 20px 0 var(--cor-verde-transparente);
+  background-color: var(--cor-verde-escuro);
+  transform: scale(1.05);
+}
+
+section.comprar img.metodo {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0 0 0;
+}
+
+section.comprar img.divisor {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.comprar {
+    padding: 80px 30px 120px 30px;
+  }
+  section.comprar h2 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+  section.comprar h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+  section.comprar h4 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+  section.comprar img.metodo {
+    max-width: 250px;
+  }
+  section.comprar img.divisor {
+    width: 150%;
+  }
+}

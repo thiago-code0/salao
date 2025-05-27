@@ -1,0 +1,84 @@
+/* <section class="garantia"> */
+
+section.garantia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(-90deg, #faf8f8, #FFFFFF);
+  background: -webkit-linear-gradient(-90deg, #ffffff, #FFFFFF);
+  background: -moz-linear-gradient(-90deg, #ffffff, #FFFFFF);
+  position: relative;
+  overflow: hidden;
+  padding: 120px 80px;
+}
+
+section.garantia img.principal {
+  width: 100%;
+  max-width: 300px;
+}
+
+section.garantia .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 60%;
+  padding: 0 0 0 50px;
+  z-index: 4;
+}
+
+section.garantia .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+  padding: 0 0 20px 0;
+}
+
+section.garantia .titulo h2 span {
+  color: var(--cor-preto);
+}
+
+section.garantia .titulo p {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  padding: 0 0 20px 0;
+}
+
+section.garantia .titulo button {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: #11d83d;
+  padding: 20px 35px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+section.garantia .titulo button:hover {
+  box-shadow: 10px 10px 20px 0 var(--cor-branco);
+  background-color: #11d83d;
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.garantia {
+    flex-direction: column;
+    padding: 80px 30px 80px 30px;
+  }
+  section.garantia img.principal {
+    max-width: 80%;
+  }
+  section.garantia .titulo {
+    max-width: 100%;
+    padding: 50px 0 0 0;
+  }
+  section.garantia .titulo button {
+    border-radius: 20px;
+  }
+}

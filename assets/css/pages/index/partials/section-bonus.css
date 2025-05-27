@@ -1,0 +1,120 @@
+/* <section class="bonus"> */
+
+section.bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--cor-pele), var(--cor-branco));
+  padding: 80px;
+}
+
+section.bonus .titulo {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+section.bonus .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+}
+
+section.bonus .titulo h2 span {
+  color: var(--cor-preto);
+}
+
+section.bonus .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section.bonus .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--cor-branco);
+  box-shadow: var(--sombra);
+  border-radius: 20px;
+  padding: 50px;
+  width: 28%;
+  margin: 20px;
+  min-height: 380px;
+  position: relative;
+}
+
+section.bonus .itens .item.meio {
+  margin: 0 50px;
+}
+
+section.bonus .itens .item img {
+  width: 100%;
+  max-width: 50px;
+  position: absolute;
+  top: -25px;
+  left: 30px;
+}
+
+section.bonus .itens .item h3 {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+}
+
+section.bonus .itens .item p {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+}
+
+section.bonus button {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: #11d83d;
+  padding: 20px 35px;
+  border-radius: 100px;
+  transition: all 0.3s;
+  margin: 30px 0 0 0;
+}
+
+section.bonus button:hover {
+  box-shadow: 10px 10px 20px 0 var(--cor-verde-transparente);
+  background-color: #11d83d;
+  transform: scale(1.05);
+}
+
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.bonus {
+    padding: 0 30px 50px 30px;
+  }
+  section.bonus .titulo {
+    padding: 0 0 50px 0;
+  }
+  section.bonus .itens {
+    flex-direction: column;
+  }
+  section.bonus .itens .item {
+    padding: 60px 30px;
+    min-height: auto;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  section.bonus .itens .item.meio {
+    margin: 50px 0;
+  }
+  section.bonus button {
+    border-radius: 20px;
+  }
+}

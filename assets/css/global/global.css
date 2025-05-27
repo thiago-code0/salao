@@ -1,0 +1,8 @@
+/* Global */
+
+@import './fonts.css';
+@import './normalize.css';
+@import './scrollbar.css';
+@import './variables.css';
+@import './cookie.css';
+@import '../pages/index/partials/section-gallery.css'

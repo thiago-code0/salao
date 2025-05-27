@@ -1,0 +1,19 @@
+/* index */
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/section-acao.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-autora.css';
+@import './partials/section-beneficios.css';
+@import './partials/section-bonus.css';
+@import './partials/section-comprar.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-duvidas.css';
+@import './partials/section-garantia.css';
+@import './partials/section-informacao.css';
+@import './partials/footer.css';
+@import './/partials/div-gallery.css'

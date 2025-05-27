@@ -1,0 +1,135 @@
+/* <section class="beneficios"> */
+
+section.beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-preto);
+  position: relative;
+  overflow: hidden;
+}
+
+section.beneficios img.divisor {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+section.beneficios img.divisor.topo {
+  top: 0;
+}
+
+section.beneficios img.divisor.base {
+  bottom: 0;
+}
+
+section.beneficios img.blush {
+  width: 100%;
+  max-width: 2000px;
+  position: absolute;
+  top: -500px;
+  right: -1000px;
+  z-index: 1;
+  animation: brilhando 10s linear infinite;
+}
+
+@keyframes brilhando {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section.beneficios img.principal {
+  width: 100%;
+  max-width: 40%;
+  margin-top: auto;
+  z-index: 2;
+}
+
+section.beneficios h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  letter-spacing: 10px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+section.beneficios .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 60%;
+  padding: 250px 80px;
+  z-index: 4;
+}
+
+section.beneficios .titulo img.logo {
+  width: 100%;
+  max-width: 450px;
+}
+
+section.beneficios .titulo h3 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 40px 0 0 0;
+  padding: 0 0 0 50px;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
+section.beneficios .titulo h3 img {
+  width: 100%;
+  max-width: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.beneficios {
+    flex-direction: column;
+  }
+  section.beneficios img.divisor {
+    width: 200%;
+  }
+  section.beneficios img.blush {
+    display: none;
+  }
+  section.beneficios img.principal {
+    max-width: 100%;
+  }
+  section.beneficios h2 {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+  }
+  section.beneficios .titulo {
+    max-width: 100%;
+    padding: 120px 30px 50px 30px;
+  }
+  section.beneficios .titulo img.logo {
+    max-width: 250px;
+  }
+  section.beneficios .titulo h3 {
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    margin: 30px 0 0 0;
+    padding: 0 0 0 40px;
+  }
+  section.beneficios .titulo h3 img {
+    max-width: 25px;
+  }
+}

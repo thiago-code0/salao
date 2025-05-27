@@ -1,0 +1,73 @@
+/* <section class="autor"> */
+
+section.autora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  position: relative;
+  overflow: hidden;
+  padding: 50px 80px 250px 80px;
+}
+
+section.autora img.divisor {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+section.autora img.principal {
+  width: 100%;
+  max-width: 40%;
+}
+
+section.autora .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 50%;
+  z-index: 4;
+  margin-right: auto;
+  padding: 0 80px 0 0;
+}
+
+section.autora .titulo h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+}
+
+section.autora .titulo p {
+  font-family: var(--regular);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  padding: 30px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.autora {
+    flex-direction: column-reverse;
+    padding: 50px 30px 80px 30px;
+  }
+  section.autora img.principal {
+    max-width: 80%;
+  }
+  section.autora img.divisor {
+    width: 150%;
+  }
+  section.autora .titulo {
+    max-width: 100%;
+    padding: 50px 0 0 0;
+  }
+  section.autora .titulo h2 span {
+    color: var(--cor-preto);
+  }
+}

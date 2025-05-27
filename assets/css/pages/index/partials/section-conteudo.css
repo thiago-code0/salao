@@ -1,0 +1,127 @@
+/* <section class="conteudo"> */
+
+section.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--cor-branco), var(--cor-pele));
+  padding: 80px;
+}
+
+section.conteudo .titulo {
+  text-align: center;
+}
+
+section.conteudo .titulo h2 {
+  font-family: var(--estilo);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+}
+
+section.conteudo .titulo h2 span {
+  color: var(--cor-preto);
+}
+
+section.conteudo .titulo p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.conteudo .modulos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+section.conteudo .modulos .parte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 50%;
+}
+
+section.conteudo .modulos .parte.esquerda {
+  margin: 0 50px 0 0;
+}
+
+section.conteudo .modulos .modulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--cor-branco);
+  box-shadow: var(--sombra);
+  padding: 60px 30px 30px 30px;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  margin: 60px 0 0 0;
+}
+
+section.conteudo .modulos .modulo h3 {
+  font-family: var(--bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-preto);
+  padding: 15px 35px;
+  border-radius: 100px;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+
+section.conteudo .modulos .modulo p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-cinza);
+  line-height: 1.5;
+  padding: 0 0 0 40px;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+section.conteudo .modulos .modulo p span {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-family: var(--bold);
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: var(--cor-branco);
+  background-color: var(--cor-preto);
+  margin: 0 10px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.conteudo {
+    padding: 80px 30px;
+  }
+  section.conteudo .modulos {
+    flex-direction: column;
+  }
+  section.conteudo .modulos .parte {
+    max-width: 100%;
+  }
+  section.conteudo .modulos .parte.esquerda {
+    margin: 0 0 0 0;
+  }
+  section.conteudo .modulos .modulo {
+    padding: 40px 30px 40px 30px;
+    margin: 50px 0 0 0;
+  }
+  section.conteudo .modulos .modulo h3 {
+    padding: 12px 25px;
+    top: -22px;
+  }
+}

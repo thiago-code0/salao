@@ -1,0 +1,94 @@
+/* <section class="depoimentos"> */
+
+section.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 80px 150px 80px;
+  background-color: var(--cor-branco);
+  overflow: hidden;
+  position: relative;
+}
+
+section.depoimentos img.divisor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+section.depoimentos h2 {
+  font-family: var(--bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+  text-align: center;
+}
+
+section.depoimentos .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+section.depoimentos .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 0 0 0;
+  width: 50%;
+}
+
+section.depoimentos .itens .item h3 {
+  font-family: var(--bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-preto);
+  padding: 20px 50px 20px 100px;
+  border-radius: 100px;
+  position: relative;
+  border: 3px solid var(--cor-preto);
+}
+
+section.depoimentos .itens .item h3 img {
+  width: 100%;
+  max-width: 90px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translate(0, -50%);
+}
+
+section.depoimentos .itens .item p {
+  font-family: var(--regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  width: 100%;
+  max-width: 80%;
+  padding: 30px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.depoimentos {
+    padding: 80px 30px 150px 30px;
+  }
+  section.depoimentos img.divisor {
+    width: 150%;
+  }
+  section.depoimentos .itens {
+    flex-direction: column;
+  }
+  section.depoimentos .itens .item {
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+  section.depoimentos .itens .item p {
+    max-width: 100%;
+  }
+}
